@@ -48,7 +48,7 @@ class UserList extends React.Component {
         return {
             loaded : false,
             dataSource : new ListView.DataSource({
-                getSectionData          : getSectionData,
+                getSectionHeaderData    : getSectionData,
                 getRowData              : getRowData,
                 rowHasChanged           : (row1, row2) => row1 !== row2,
                 sectionHeaderHasChanged : (s1, s2) => s1 !== s2
